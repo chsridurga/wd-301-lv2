@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <style type="text/css">
+            body {
+                background-color:rgb(224, 181, 11);
+                text-align: center;
+            }
+
+            .wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 90vh;
+                height: auto;
+                background-color: rgb(201, 163, 13);
+            }
+
+            .form-holder {
+                background-color: rgba(241, 234, 234, 0.126);
+                width: 450px;
+                max-width: 90%;
+                padding: 35px 0px;
+                opacity: .7;
+                border-radius: 10px;
+            }
+
+            .form-holder h2 {
+                color: #ddd;
+                padding: 10px;
+                text-align: center;
+                font-size: 22px;
+            }
+
+            .form .form-group {
+                width: 90%;
+                margin: 20px auto;
+                padding: 10px;
+                position: relative;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                background: rgb(255, 255, 255);
+                border: none;
+                outline: none;
+                color: rgb(13, 185, 233);
+                font-size: 15px;
+                border-bottom: 2px solid #777;
+                border-radius: 5px;
+                padding-left: 40px;
+            }
+
+            .form-group button {
+                width: 100%;
+                padding: 10px;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: rgb(2, 10, 13);
+                font-size: 15px;
+                border: 2px solid #777;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .form-group button:hover {
+                background: rgb(37, 93, 134);
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center;color: blue;">Register here</h2>
+        <div class="wrapper">
+            
+            <div class="form-holder">
+                <form action="register" class="form" method="post">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="username" placeholder="Username">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="py" placeholder="Batch">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" placeholder="PhoneNumber">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
